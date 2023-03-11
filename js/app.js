@@ -1,6 +1,11 @@
 const botonCoche = document.querySelector("#hamburguesas");
 botonCoche.onclick = (e) =>{
-    console.log(e.target.value);
+    valorProducto(e.target.value);
 
 };
+
+function valorProducto(value){
+    console.log(value)
+
+}
 
