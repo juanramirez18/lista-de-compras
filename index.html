@@ -9,38 +9,77 @@
     <body>
         <section>
             <body>
-                <h2 class="text-center my-5">Lista de compras</h2>
-                <h3>Escoje tu hamburguesa</h3>
-                <div id="hamburguesas" class="col-3 px-4">
-                    <input id="coche" type="checkbox" name="transporte" value="1">Hamburguesa 300 gr $100
+                <header class="py-4 bg-secondary">
+                    <h2 class="text-center my-5 text-white">Lista de compras</h2>
 
-                    <br>
-
-                    <input id="avion" type="checkbox" name="transporte" value="2">Hamburguesa mixta carne-polo $200
-
-                    <br>
-
-                    <input id="tren" type="checkbox" name="transporte" value="3">Hamburguesa Crispy $300
+                </header>
+                
+                
+                <div class="px-3 my-3 card shadow col-md-3" id="hamburguesas">
+                    <h3>Escoje tu hamburguesa</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="op1">
+                        <label class="form-check-label" for="op1">
+                          Hamburguesa 300gr
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="op2">
+                        <label class="form-check-label " for="op2">
+                          Hamburguesa mixta
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="op3">
+                        <label class="form-check-label " for="op3">
+                          Hamburguesa crispy
+                        </label>
+                      </div>
 
                 </div>
-                <h3>Escoje tu bebida</h3>
-                <div id="bebidas" class="col-4 px-3">
-                    <input id="coche" type="checkbox" name="transporte" value="1">Soda saborizada $5
+                
+                <!-- <div id="hamburguesas" class="col-3 px-4 card shadow col-md-7">
+                    <input class="form-check-input" id="coche" type="checkbox" name="transporte" value="1">Hamburguesa 300 gr $100
 
                     <br>
 
-                    <input id="avion" type="checkbox" name="transporte" value="2">Botella de agua $3
+                    <input class="form-check-input" id="avion" type="checkbox" name="transporte" value="2">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Hamburguesa mixta
+                      </label>
 
                     <br>
 
-                    <input id="tren" type="checkbox" name="transporte" value="3">Gaseosa $7
+                    <input class="form-check-input" id="tren" type="checkbox" name="transporte" value="3">Hamburguesa Crispy $300
 
                 </div>
-                <div id="cuenta-total">
-                    <h3>Tu pedido</h3>
-                    <ul>
-                    </ul>
+                 -->
+                 <div class="px-3 my-3 card shadow col-md-3 ">
+                    <h3>Escoje tu bebida</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="op4">
+                        <label class="form-check-label" for="op4">
+                          Cerveza
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="op5">
+                        <label class="form-check-label " for="op5">
+                          Gaseosa
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="op6">
+                        <label class="form-check-label " for="op6">
+                          Botella de agua
+                        </label>
+                      </div>
+
                 </div>
+                <div id="resultado">
+                    <p>Tu pedido</p>
+                </div>
+                
                 
                 
                 <p></p>
