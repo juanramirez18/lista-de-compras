@@ -1,8 +1,9 @@
 const botonCoche = document.querySelector("#hamburguesas");
-botonCoche.onclick = (e) =>{
-    valorProducto(e.target.id, precios);
+botonCoche.addEventListener("click", (e) => valorProducto(e.target.id, precios))
+// botonCoche.onclick = (e) =>{
+//     valorProducto(e.target.id, precios);
 
-};
+// };
 let total = [];
 const precios = {
     precio1 : 2300,
@@ -44,6 +45,20 @@ function mostrarTotal(total){
     let totalPagar = 0;
     total.forEach(element => totalPagar += element )
     console.log(parseInt(totalPagar))
+    const totalP = document.querySelector("#total-pagar");
+    const pafTotal = document.createElement("P");
+    pafTotal.classList.add("fs-4", "fw-bold")
+    pafTotal.textContent = `Total a pagar: ${totalPagar}`;
+    limpiarHTML()
+    totalP.appendChild(pafTotal);
 
+}
+
+function limpiarHTML(){
+    const totalP = document.querySelector("#total-pagar");
+    while(totalP.firstChild){
+        totalP.removeChild(totalP.firstChild)
+    }
+    
 }
 
