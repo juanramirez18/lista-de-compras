@@ -41,7 +41,7 @@ function mostrarHTML(mensaje, precio){
 
 function mostrarTotal(total){
     console.log(total)
-    let totalPagar;
+    let totalPagar = 0;
     total.forEach(element => totalPagar += element )
     console.log(parseInt(totalPagar))
 
