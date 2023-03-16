@@ -1,10 +1,7 @@
 const botonHamburguesa = document.querySelector("#hamburguesas");
 const bebidas = document.querySelector("#bebidas")
 botonHamburguesa.addEventListener("click", (e) => valorProducto(e.target.id, precios))
-// botonCoche.onclick = (e) =>{
-//     valorProducto(e.target.id, precios);
 
-// };
 
 bebidas.onclick = (e) => {
     valorProducto(e.target.id, precios)
